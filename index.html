@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/jquery-1.8.2.min.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/vendor/modernizr-2.6.1.min.js"></script>
+
+    </head>
+    <body>
+    <header></header>
+    <div id="content">
+        <h1>polytechnic labs listing</h1>
+    <section>
+
+        <p id="instructions">Use the drop-downs to filter the listing by lab location, what programs are associated with
+            the lab and if it is a learning,research lab, or both or you can combine selections for more specific filtering.</p>
+
+        <div class="heading"><span class="labH"> lab location</span><span class="locationH">program</span><span class="programH">lab type</span> </div>
+
+        <form id="selection">
+        <select id="locat" name="locat">
+            <option value="">All</option>
+            <option value="aca">Academic Center</option>
+            <option value="aeo">AEOC Building</option>
+            <option value="alt">Altitude Chamber Building</option>
+            <option value="cer">CERTT Building</option>
+            <option value="ist">ISTB3</option>
+            <option value="per">Peralta Hall</option>
+            <option value="sim">Simulator Building</option>
+            <option value="tec">Technology Center</option>
+       </select>
+
+       <select id="prog" name="prog">
+           <option value="">All</option>
+           <option value="bio">Applied Biological Sciences</option>
+           <option value="avi">Aviation</option>
+           <option value="cog">Cognitive Science and Engineering</option>
+           <option value="eng">Engineering</option>
+           <option value="env">Environmental Technology Management</option>
+           <option value="gra">Graphic Information Technology</option>
+           <option value="mec">Mechanical and Manufacturing Engineering Technology</option>
+       </select>
+
+       <select id="lt" name="labType">
+           <option value="">All</option>
+           <option value="rl">Learning & Research</option>
+           <option value="learning">Learning Lab</option>
+           <option value="research">Research Lab</option>
+       </select>
+            <button  id="resetPage" type="reset" >Reset</button>
+        </form>
+
+
+        <article id="labList">
+            <div class="heading"><span class="labH"> lab name </span><span class="locationH">location</span><span class="programH">program</span> </div>
+            <div class="aeo env research"><span class="lab">Alternate Emergency Operations Center</span><span class="location">AEOC Building</span> <span class="program">Environmental Technology Management</span></div>
+            <div class="ist bio learning"><span class="lab">Applied Biological Sciences Lab</span><span class="location">ISTB3</span> <span class="program">Applied Biological Sciences</span></div>
+            <div class="ist cog rl"><span class="lab">Applied Cognitive Theory, Usability & Advanced Learning</span><span class="location">ISTB3</span> <span class="program">Cognitive Science and Engineering</span></div>
+            <div class="sim mec learning"><span class="lab">Automation Lab</span><span class="location">Simulator Building</span><span class="program">Mechanical and Manufacturing Engineering Technology</span></div>
+            <div class="sim mec learning"><span class="lab">CAD/CAM Lab</span><span class="location">Simulator Building</span> <span class="program">Mechanical and Manufacturing Engineering Technology</span></div>
+            <div class="cer cog rl"><span class="lab">Cognitive Engineering Research on Team Tasks Lab</span><span class="location">CERTT Building</span> <span class="program">Cognitive Science and Engineering</span></div>
+            <div class="alt avi rl"><span class="lab">Del E. Webb Foundation High Altitude Chamber Lab</span><span class="location">Altitude Chamber Building</span> <span class="program">Aviation</span></div>
+            <div class="per eng learning"><span class="lab">Engineering Studios</span><span class="location">Peralta Hall</span> <span class="program">Engineering</span></div>
+            <div class="tec env learning"><span class="lab">Environmental Technology Lab</span><span class="location">Technology Center</span> <span class="program">Environmental Technology Management</span></div>
+            <div class="tec gra learning"><span class="lab">GIT Commercial Photography Studio</span><span class="location">Technology Center</span> <span class="program">Graphic Information Technology</span></div>
+            <div class="aca eng research"><span class="lab">Human-Machine Integration Lab</span><span class="location">Academic Center</span> <span class="program">Engineering</span></div>
+            <div class="ist bio research"><span class="lab">Lab for Algae Research and Biotechnology</span><span class="location">ISTB3</span> <span class="program">Applied Biological Sciences</span></div>
+            <div class="sim avi learning"><span class="lab">Ottosen Air Traffic Control Simulation Lab</span><span class="location">Simulator Building</span> <span class="program">Aviation</span></div>
+            <div class="tec gra rl"><span class="lab">Print and Imaging Lab</span><span class="location">Technology Center</span> <span class="program">Graphic Information Technology</span></div>
+
+        </article>
+
+    </section>
+    </div>
+    <footer></footer>
+    </body>
+</html>
